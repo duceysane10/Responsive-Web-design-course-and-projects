@@ -1,0 +1,33 @@
+h1{
+    color: #2E7AD3;
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    font-size: 48px;
+}
+.card{
+    background-color: #f1f1f1;
+    width: 500px;
+    margin:0 auto;
+    padding: 25px;
+}
+.o{
+    margin-bottom: 25px;
+}
+
+.t{
+    margin-bottom: 9px;
+}
+h2{
+    color: #104C90;
+    font-size: 32px;
+    margin: 0;
+}
+p{
+    font-size: 16px;
+}
+
+a{
+    color: #FF8000;
+    margin-top: 0;
+}
