@@ -1,0 +1,179 @@
+/*  font-family: 'Source Sans Pro', sans-serif;  */
+/* xidigta iyo codeka yaree ku qoran waxay page ka ka saaraayaan
+scroleka aan loo baahneen */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif; 
+    font-size: 1rem;
+    color: #404040;
+    text-align: center;
+    width: 95%;
+    max-width: 1094px;
+}
+/* ===========================
+=========Ypography====== */
+h1{
+    font-size: 2.25rem;
+    font-weight: 300;
+    color: #fff;
+
+}
+h2{
+    font-size: 1.3125rem;
+    margin: 0em;
+}
+strong{
+    font-weight: 900;
+}
+h1 + p{
+    font-size: 1.3125rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #F18119;
+    margin: 0;
+}
+h2 + p{
+    font-weight: 900;
+    color: #F18119;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+.top-text{
+    font-size: .65rem;
+    font-weight: 900;
+    color: #F18119;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    order: -1;
+    margin-top: 0;
+    border-top: 5px #FF713B solid;
+    padding-top: 2px;
+    border-image: linear-gradient(to bottom right, #e04609, #FFA51D) 1;
+
+}
+.fine-print{
+    width: 50%;
+    font-size: .65rem;
+    letter-spacing: 1px;
+
+}
+
+/* ================
+intro Section 
+===================*/
+.intro{
+    background-image: url(images/ribs.jpg), linear-gradient(45deg,red, blue);
+    /* background-color: #ff0000; */
+    background-blend-mode:hard-light;
+    background-color: #404040;
+    padding: 0 .5em 2em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 50vh;
+    
+}
+
+
+/* =====================
+Main Content 
+===================*/
+.main-content{
+    padding: 2em 1em;
+}
+
+.intro *,
+.main-content *{
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* ====================
+ Forms 
+ ===================*/
+.email-collecto{
+    width: 80%;
+    max-width: 300px;
+    
+}
+input{
+    width: 100%;
+    border-radius: 5px;
+    font-family: inherit;
+    text-align: inherit;
+    padding: .5em;
+    margin-bottom: .75em;
+    border: 1px #ecdede solid;
+    border-radius: 5px;
+    color: #fff;
+    transform: scale(1);
+    transition: 250ms;
+}
+input:focus{
+    transform: scale(1.1);
+    border: 1px #ecdede solid;
+}
+.btn{
+    width: 100%;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 1em 1.5em;
+    font-size: 0.625rem;
+    border: 0;
+    border-radius: 10px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+}
+.btn-primary{
+    background-image: linear-gradient(to bottom right, #FF713B, #FFA51D);
+    color: #fff;
+    transition: 250ms;
+    transform: scale(1);
+}
+
+.btn-primary:hover,
+.btn-primary:focus{
+    color: #000;
+    transform: scale(1.1);
+}
+/* ====================
+ All Media Query 
+ ===================*/
+ @media(min-width:500px){
+    body {
+        width: 95%;
+        max-width: 900;
+        margin: 0 auto;
+        font-size: 1.125rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    h1 {
+        font-size: 3.5rem;
+    }
+    
+    h2,
+    h1 + p {
+        font-size: 1.75rem;
+    }
+    .intro,
+    .main-content{
+        width: 50%;
+        min-height: 100vh;
+    }
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+ }
+
